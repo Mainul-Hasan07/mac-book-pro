@@ -1,10 +1,10 @@
 function updateExtraCost(product,price){
-    const memoryCost =document.getElementById(product + '-cost');
-    memoryCost.innerText = price;
-    calculate();
+    const extraCost =document.getElementById(product + '-cost');
+    extraCost.innerText = price;
+    updateTotal();
 };
 
-function calculate(){
+function updateTotal(){
     const productInput = document.getElementById('product-cost');
     const productCost = parseFloat(productInput.innerText);
 
@@ -66,10 +66,10 @@ document.getElementById('button-addon2').addEventListener('click',function(){
     const discountCode = discountInput.value ;
     const totalInput = document.getElementById('total');
     if(discountCode == 'stevekaku'){
-        const total = calculate() - (calculate() / 5);
+        const total = updateTotal() - (updateTotal() / 5);
         totalInput.innerText = total;
     }
     else{
-        totalInput.innerText = calculate();
+        totalInput.innerText = updateTotal();
     }
 })
