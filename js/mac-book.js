@@ -72,4 +72,5 @@ document.getElementById('button-addon2').addEventListener('click',function(){
     else{
         totalInput.innerText = updateTotal();
     }
+    discountInput.value = '';
 })
