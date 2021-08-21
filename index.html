@@ -21,14 +21,14 @@
                     <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 effeciency cores, 7-core GPU,and 16-core Neural engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4ports Magic Keyboard-US English</p>
                     <div class="my-5">
                         <h4>Memory</h4>
-                        <button type="button" class="btn btn-outline-secondary">8GB unified memory</button>
-                        <button type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                        <button id="memory-8" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+                        <button id="memory-16" type="button" class="btn btn-outline-secondary">16GB unified memory</button>
                     </div>
                     <div class="my-5">
                         <h4>Storage</h4>
-                        <button type="button" class="btn btn-outline-secondary">25GB SSD Storage</button>
-                        <button type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
-                        <button type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
+                        <button id="storage-25" type="button" class="btn btn-outline-secondary">25GB SSD Storage</button>
+                        <button id="storage-512" type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
+                        <button id="storage-1T" type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
                     </div>
                     <div class="my-5">
                         <h4>Choose your delivery option</h4>
@@ -43,11 +43,11 @@
                             </tr>
                             <tr class="fw-bold">
                             <td>Extra Memory Cost</td>
-                            <td>$0</td>
+                            <td>$<span id="memory-cost">0</span></td>
                             </tr>
                             <tr class="fw-bold">
                             <td>Extra Storage Cost</td>
-                            <td>$0</td>
+                            <td>$<span id="storage-cost">0</span></td>
                             </tr>
                             <tr class="fw-bold">
                             <td>Delivery Charge</td>
@@ -70,11 +70,13 @@
                         </div>
                 </div>
             </div>
+            <hr>
         </section>
     </main>
-    <hr>
-    <footer class="container">
+    
+    <footer class="container mb-5">
         <h2 class="text-center">Total: $1299</h2>
     </footer>
+    <script src="js/mac.js"></script>
 </body>
 </html>
