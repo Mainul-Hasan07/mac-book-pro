@@ -60,7 +60,7 @@ document.getElementById('delivery-option-2').addEventListener('click',function()
     updateExtraCost('delivery',20);
 })
 
-//pomo code
+//pomo code for Discount
 document.getElementById('button-addon2').addEventListener('click',function(){
     const discountInput = document.getElementById('pomo-code');
     const discountCode = discountInput.value ;
